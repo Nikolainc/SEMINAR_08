@@ -227,19 +227,19 @@
         //11 16 15 06
         //10 09 08 07
 
-        //Console.WriteLine("Введите размерность массива для спирального заполнения: ");
-        //int.TryParse(Console.ReadLine(), out int X);
-        //int[,] array = new int[X, X];
-        //FillSpiralArray(array, array.GetLength(0), array.GetLength(1), 1, 0, 0);
-        //Console.WriteLine("Спиральный массив: ");
-        //array.Print();
+        Console.WriteLine("Введите размерность массива для спирального заполнения: ");
+        int.TryParse(Console.ReadLine(), out int X);
+        int[,] array = new int[X, X];
+        FillSpiralArray(array, array.GetLength(0), array.GetLength(1));
+        Console.WriteLine("Спиральный массив: ");
+        array.Print();
 
         #endregion
 
         #endregion
 
     }
-    static void FillSpiralArray(int[,] array, int stopLine, int stopColumn, int counter, int startColumn, int startLine)
+    static void FillSpiralArray(int[,] array, int stopLine, int stopColumn, int counter = 1, int startColumn = 0, int startLine = 0)
     {
         if (counter <= array.GetLength(0) * array.GetLength(1))
         {
