@@ -128,7 +128,7 @@
         //int[,] array =
         //{
         //    {1,4,7,2},
-        //    {5,9,2,3},
+        //    {5,9,0,3},
         //    {8,4,2,4},
         //};
 
@@ -149,13 +149,13 @@
         //5 2 6 7
         //Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-        //int[,] array = 
-        //{ 
-        //    { 5, 9, 2, 3 }, 
+        //int[,] array =
+        //{
+        //    { 5, 9, 2, 3 },
         //    { 8, 4, 2, 4 },
         //    { 9, 4, 5, 2 },
-        //    { 5, 2, 6, 7 }, 
-        //    { 3, 8, 1, 2 } 
+        //    { 5, 2, 6, 7 },
+        //    { 3, 8, 1, 2 }
         //};
 
         //array.Print();
@@ -173,6 +173,7 @@
         //18 20
         //15 18
 
+        //Console.WriteLine("Матрица 1: ");
         //int[,] firstMatrix =
         //{
         //    { 2, 4, 2 },
@@ -180,6 +181,7 @@
         //    { 4, 1, 0 },
         //};
         //firstMatrix.Print();
+        //Console.WriteLine("Матрица 2: ");
         //int[,] secondMatrix =
         //{
         //    { 3, 4, 1 },
@@ -191,6 +193,7 @@
         //if (firstMatrix.GetLength(0) == secondMatrix.GetLength(1) && firstMatrix.GetLength(1) == secondMatrix.GetLength(0))
         //{
         //    var result = MultiplyMatrix(firstMatrix, secondMatrix);
+        //    Console.WriteLine("Результат произведения: ");
         //    result.Print();
         //}
         //else
